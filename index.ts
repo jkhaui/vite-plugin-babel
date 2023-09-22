@@ -17,8 +17,8 @@ const babelPlugin = ({ babelConfig = {}, filter = DEFAULT_FILTER, apply, loader 
 	return {
 		name: 'babel-plugin',
 
-		apply: 'build',
-		enforce: 'post',
+		apply,
+		enforce: 'pre',
 
 		config() {
 			return {
