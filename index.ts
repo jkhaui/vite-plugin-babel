@@ -18,7 +18,7 @@ const babelPlugin = ({ babelConfig = {}, filter = DEFAULT_FILTER, apply, loader 
 		name: 'babel-plugin',
 
 		apply,
-		enforce: 'pre',
+		enforce: 'post',
 
 		config() {
 			return {
